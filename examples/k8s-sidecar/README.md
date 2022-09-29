@@ -215,7 +215,7 @@ as a separate service for several reasons:
    > [proxy_with_sa_key.yaml](proxy_with_sa_key.yaml#L49-L58)
     ```yaml
       # This flag specifies where the service account key can be found
-      - "-credential_file=/secrets/service_account.json"
+      - "--credentials_file=/secrets/service_account.json"
     securityContext:
       # The default Cloud SQL proxy image runs as the
       # "nonroot" user and group (uid: 65532) by default.
